@@ -855,9 +855,14 @@ body{
  
  /*-------------------------MODAL----------------------------------*/
     .hotel-search-form-modal{
-     display:block;
+     visibility: hidden;
+     opacity: 0;
+     -webkit-transition: visibility 0s linear 0.8s, opacity 0.8s;
+     -o-transition: visibility 0s linear 0.8s, opacity 0.8s;
+     transition: visibility 0s linear 0.8s, opacity 0.8s;
      position:absolute;
      z-index: 30;
+   
      
      top:0;
      right:50%;
@@ -867,6 +872,7 @@ body{
      
       width: 568px;
       min-height: 395px;
+     
       background-color:#ffffff;
       -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
               box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -903,7 +909,8 @@ body{
      
      background-color: #f2f2f2;
      border:none;
-     box-shadow: none;
+     -webkit-box-shadow: none;
+             box-shadow: none;
  }
  .guests-input{
      display:inline-block;
@@ -918,7 +925,8 @@ body{
  
      background-color: #f2f2f2;
      border:none;
-     box-shadow: none;
+     -webkit-box-shadow: none;
+             box-shadow: none;
  }
  .hotel-search-form input:hover{
      background-color: #ebebeb;
@@ -976,7 +984,8 @@ body{
  
      background-color: #f2f2f2;
      border:none;
-     box-shadow: none;
+     -webkit-box-shadow: none;
+             box-shadow: none;
  }
  .reduce{
     margin-right:-4px;
@@ -1158,3 +1167,11 @@ body{
    clip: rect(0 0 0 0);
    overflow: hidden;
  }
+ /*------------------------------------MODAL_SHOW-------------------------*/
+ .modal-show{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: visibility 0s linear 0s, opacity 0.8s;
+    -o-transition: visibility 0s linear 0s, opacity 0.8s;
+    transition: visibility 0s linear 0s, opacity 0.8s;
+}
